@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Movie App</string>
+    <string name="search_movies">Search movies</string>
+    <string name="movie_details">Movie Details</string>
+    <string name="back">Back</string>
+    <string name="an_unexpected_error_occurred">An unexpected error occurred</string>
+    <string name="no_movies_found">No movies found</string>
+    <string name="movie_not_found">Movie not found</string>
+    <string name="retry">Retry</string>
 </resources>
