@@ -90,11 +90,10 @@ Let's trace two key user flows to see how these layers work together.
 2.Event Trigger: With each character typed, the onValueChange callback is triggered, calling viewModel.onSearchQueryChanged().  
 3.Reactive Search: The ViewModel updates its _searchQuery StateFlow.  
 4.Debouncing: In the ViewModel's init block, a coroutine is observing this searchQuery flow. Crucially, it uses the .debounce(500) 
-  operator. This means it will only proceed if the user stops typing for 500 milliseconds. This prevents an API call for every single 
-  keystroke, saving network resources and providing a smoother experience.  
+  operator. This means it will only proceed if the user stops typing for 500 milliseconds. This prevents an Database call for every single 
+  keystroke, providing a smoother experience.  
 5.Executing Search: Once the debounce time passes, the flow continues. It calls the SearchMoviesUseCase with the query "Oppenheimer".  
-6.Data Fetching: The use case calls repository.searchMovies(). For search, the repository is configured to only fetch from the network, 
-  as caching search results is complex and often not desired.  
+6.Data Fetching: The use case calls repository.searchMovies(). For search, the repository is configured to only fetch from the room database.
 7.State Update & UI Recomposition: The ViewModel receives the search results, updates the _movies StateFlow, and the UI recomposes 
   to show the new list of movies matching the search query. If the user clears the search bar, the searchQuery becomes empty, and the 
   observeSearchQuery flow triggers fetchTrendingMovies() again to return to the original state.
