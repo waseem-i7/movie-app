@@ -101,8 +101,6 @@ Let's trace two key user flows to see how these layers work together.
 
 # 3. Key Strengths & Best Practices Demonstrated
 
-When asked "What are you proud of in this project?" or "What best practices did you follow?", you can mention:
-
 •Architectural Purity: "I successfully implemented a Clean Architecture, which separates the app into independent layers. This makes 
  the codebase robust, testable, and easy to scale."  
 •Reactive and Declarative UI: "The UI is fully built with Jetpack Compose and follows a reactive, unidirectional data flow model. This 
@@ -110,8 +108,8 @@ When asked "What are you proud of in this project?" or "What best practices did 
 •Offline-First Strategy: "I implemented a network-first, cache-fallback strategy. The app provides a seamless experience whether the 
  user is online or offline, by intelligently fetching data from the network or the local Room database."  
 •Efficient Networking: "The networking layer is optimized with interceptors for authentication and logging. Furthermore, the search 
- functionality is debounced to prevent excessive network requests, making the app more efficient."  
-•User Experience Focus: "I paid close attention to the user experience by implementing placeholder loading states, a dark theme to 
+ functionality is debounced to prevent excessive db requests, making the app more efficient."  
+•User Experience Focus: "I paid close attention to the user experience by implementing placeholder loading states, empty state, a dark theme to 
  match the designs, and a dedicated error screen with a retry mechanism, ensuring the user is never left at a dead end."  
 •Dependency Management: "I used Hilt for dependency injection, which decouples components and greatly simplifies testing and 
  managing class dependencies throughout the app."
