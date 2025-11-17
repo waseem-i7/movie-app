@@ -5,6 +5,7 @@ users to search for specific titles, and view movie details. The core features i
 offline caching with Room, and a well-defined architecture that ensures the app is maintainable and testable. The entire technology stack 
 is based on Google's recommended best practices for modern Android development."
 
+## Demo Video Link : https://drive.google.com/file/d/1x3KDUa8I_LRxhQu-xZ-jv_B4x7vBmaHI/view?usp=sharing
 
 # 1. Core Architecture: Clean Architecture with MVVM
 
